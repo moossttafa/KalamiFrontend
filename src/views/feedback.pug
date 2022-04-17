@@ -1,0 +1,25 @@
+extends layouts/app
+
+block page-title
+	| Feedback
+
+block content
+	include ./partials/banner
+	.articles-wrapper
+		.mdl-grid
+			.mdl-cell.mdl-cell--2-col
+			.mdl-cell.mdl-cell--8-col
+				.articles.mdl-shadow--2dp
+					.article-item.mdl-card
+						img( class="image image--article" src="https://source.unsplash.com/720x400/travel", alt="")
+						.mdl-card__title
+							h5.headline 
+								|Kalami
+						.mdl-card__supporting-text
+							| Did you face any problem while using our app Kalami AAC? Please let us know, we are very keen to making Leeloo the best assissive communication software out there.
+						.mdl-card__supporting-text
+							|If you would like to report a problem that is related to you account, please take a screenshot of your "My Account" screen or send attach your "Account ID" shown in your "My Account" screen of your app settings.
+							|Also don't forget to give us a rating or review on the Appstore or Google Play. Thank you!
+					
+			.mdl-cell.mdl-cell--2-col
+						

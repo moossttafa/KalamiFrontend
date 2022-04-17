@@ -1,0 +1,112 @@
+.auth-container {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%, 0);
+    perspective: 1000px;
+    width: 330px;
+    height: 375px;
+}
+.auth-layout{
+  position: relative;
+  &::before{
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    background-image: url('~images/Pattern_3.svg') ;
+    background-repeat: repeat;
+    background-size: contain;
+    opacity: .2;
+  }
+}
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+#cube figure {
+    backface-visibility: hidden;
+    margin: 0;
+    width: 330px;
+    height: 375px;
+    display: block;
+    position: absolute;
+}
+
+#cube .front {
+    // transform: rotateY(0deg) translateZ(187.5px);
+}
+
+#cube .left {
+    transform: rotateY(-90deg) translateZ(0px) ;
+}
+
+#cube .bottom {
+    transform: rotateX(-90deg) translateZ(0px);
+}
+
+#cube {
+    // transform: translateZ(-165px);
+}
+
+#cube.show-front {
+    // transform: translateZ(-165px) rotateY(0deg);
+    
+}
+
+#cube.show-left {
+    transform: translateX(0px) translateZ(0px) rotateY(90deg);
+    
+}
+
+#cube.show-bottom {
+    transform: rotateX(90deg);
+    
+}
+
+#cube {
+    transition: transform .4s; 
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  // 0%   {opacity: 1;}
+  0%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+.login-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .signupDivider {
+        width: 40%;
+        display: inline-block;
+    }
+    span{
+        margin: 0 15px;
+    }
+}
+
+.login-with{
+    text-align: center;
+    margin-bottom: 14px;
+
+    .login-icon{
+        width: 30px;
+        margin: 7px 8px;
+    }
+}

@@ -1,0 +1,40 @@
+figure.front
+	form(action="" method="post")
+		.mdl-card.mdl-shadow--6dp
+			.mdl-card__title.mdl-color--primary.mdl-color-text--white.relative
+				h2.mdl-card__title-text Sign in
+			.mdl-card__supporting-text
+				.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+					input#login.mdl-textfield__input
+					label.mdl-textfield__label(for='login') Login
+				.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+					input#password.mdl-textfield__input(type='password')
+					label.mdl-textfield__label(for='password') Password
+			.mdl-card__actions.mdl-card--border
+				.mdl-grid
+					button.mdl-cell.mdl-cell--12-col.mdl-button.mdl-button--raised.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-color-text--white
+						| Login
+					
+					.mdl-cell.mdl-cell--6-col
+						input#remember(type='checkbox')
+						label(for='remember') Remember Me
+
+					a.mdl-color-text--primary.mdl-cell.mdl-cell--6-col.mdl-typography--text-right.auth-animation(onclick='flip("show-bottom")' style='float: right ; cursor: pointer ')
+							| Lost
+							| Password?
+				
+				.mdl-grid
+					.mdl-cell.mdl-cell--12-col
+						.login-divider 
+							hr.signupDivider 
+							span Or
+							hr.signupDivider
+						.login-with 
+							a(href="#")
+								img(src="~images/facebookicon.png", alt="icon" class="login-icon")
+							a(href="#")
+								img(src="~images/google-icon.png", alt="icon" class="login-icon")
+
+						span have an account? 
+						a.mdl-color-text--primary.auth-animation(onclick='flip("show-left")' style='cursor: pointer') Sign up!
+						

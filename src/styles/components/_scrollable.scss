@@ -1,0 +1,214 @@
+.full-header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: transparent;
+  box-shadow: none;
+  transition: .3s ease all;
+  .mdl-layout__header-row{
+    // justify-content: flex-end;
+  }
+  @media (max-width: 1024px) {
+    display: flex;
+  }
+  
+}
+.mdl-layout__content{
+  & + .page-content{
+    // margin-top: 64px;
+  }
+
+}
+#trigger{
+  width: 100%;
+  // height: 2px;
+  background: red;
+}
+.landing{
+  overflow-x: hidden;
+  & + div{
+    opacity: 0;
+    & + div{
+      opacity: 0;
+      // height: 100vh !important;
+    }
+  }
+}
+.demo#section-wipes{
+  background-color: lightcoral;
+  // margin-top: 60px;
+  height: auto !important;
+  position: relative;
+  @media (max-width: 1024px){
+    // margin-top: 55px;
+  }
+  
+  .scrollmagic-pin-spacer{
+    height: 100vh !important;
+  }  
+}
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  // &::-webkit-scrollbar {
+  //   width: 0;  /* Remove scrollbar space */
+  //   background: transparent;  /* Optional: just make scrollbar invisible */
+  // }
+  // @media (max-width: 768px){
+  //   background: center url('https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/nexus5x.png') no-repeat ;
+  //   background-size: 100%;
+  // }
+}
+.panel {
+  height: 100%;
+  position: absolute;
+  &.blue{
+    width: 50% !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: center url('https://source.unsplash.com/720x400/travel') no-repeat;
+    .mobile{
+      background: center url('https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/nexus5x.png') no-repeat ;
+      width: 280px;
+      height: 600px;
+      position: relative;
+      background-size: contain;
+      top: 30px;
+      img{
+        position: absolute;
+        width: 254px;
+        height: 443px;
+        top: 75px;
+        left: 12px;
+        opacity: 0;
+        &:first-of-type{
+          opacity: 1;
+        }
+      }
+      @media (max-width: 1024px) {
+        width: 280px;
+        height: 600px;
+        img{
+          width: 254px;
+          height: 443px;
+          top: 75px;
+          left: 12px;
+        }
+      }
+      @media (max-width: 768px) {
+        display: none;
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          display: none;
+        }
+      }
+    }
+    @media (max-width: 768px){
+      width: 100% !important;
+    }
+  }
+  &.turqoise, &.green, &.purple{
+    width: 50% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #3F51B5;
+    top: 0 !important;
+    @media (max-width: 768px){
+      width: 70% !important;
+    }
+  }
+  &.turqoise{
+    background-color: #B3E5FC;
+    right: 0 !important;
+    @media (max-width: 768px){
+      background: center url('https://via.placeholder.com/150') no-repeat ;
+      background-size: cover;
+    }
+    // align-items: flex-start;
+    // text-align: center;
+  }
+  &.purple{
+    background-color: #F8BBD0;
+    right: 0 !important;
+    @media (max-width: 768px){
+      background: center url('https://via.placeholder.com/160') no-repeat ;
+      background-size: cover;
+    }
+
+    // align-items: flex-start;
+  }
+  &.green{
+    background-color: #D1C4E9;
+    @media (max-width: 768px){
+      background: center url('https://via.placeholder.com/170') no-repeat ;
+      background-size: cover;
+    }
+
+    // align-items: flex-end;
+  }
+}
+
+.scrollable-title{
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.scrollable-description{
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+}
+
+.plans, .features{
+  min-height: 100vh;
+  // width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .display-3{
+    text-align: start;
+  }
+  // padding: 0 100px;
+  .mdl-grid{
+    width: 100%;
+    margin: auto 0;
+    align-items: flex-end;
+    .mdl-cell{
+      // display: flex;
+      // align-items: flex-end;
+    }
+  }
+  &.plans{
+    .display-3{
+      width: 89%;
+      text-align: left;
+    }
+  }
+  &.features{
+    padding: 0 100px;
+    background-color: rgba($color: #3F51B5, $alpha: .1);
+    @media (max-width: 992px) {
+      padding: 0 27px;
+    }
+  }
+}
+
+body{
+  animation-name: fade;
+  animation-duration: .4s;
+  animation-timing-function: ease-in-out;
+}

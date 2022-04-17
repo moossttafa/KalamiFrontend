@@ -1,0 +1,36 @@
+.slider{
+  width: 90%;
+  margin: 0 auto ;
+  .slick-arrow{
+    width: 30px;
+    height: 30px;
+    &::before{
+      font-size: 28px;
+      color: #4051B5;
+    }
+    &.slick-next{
+      right: -26px;
+    }
+    &.slick-prev{
+      left: -26px;
+    }
+  }
+  .slick-list{
+    // padding: 30px 0;
+    .slick-track{
+      display: flex;
+      align-items: baseline;
+    }
+  }
+  .slick-slide{
+    padding: 20px 10px 0 10px;
+    & > div{
+      // max-width: 300px;
+      width: 100%;
+      display: flex;
+      align-self: flex-end;
+      justify-content: center;
+    }
+
+  }
+}

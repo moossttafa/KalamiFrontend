@@ -1,0 +1,133 @@
+extends layouts/app
+
+block page-title
+	| About
+block content
+	//- .page-cover
+	//- 	img( class="image image--cover" src="https://source.unsplash.com/720x400/travel", alt="")
+	.mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+		.mdl-grid
+			.mdl-cell.mdl-cell--3-col.mdl-cell--12-col-tablet.mdl-cell--12-col-phone
+				.article-list
+					.mdl-tabs__tab-bar.mdl-shadow--2dp
+						a.mdl-tabs__tab.is-active(href='#home') Home
+						a.mdl-tabs__tab(href='#legal') Legal
+						a.mdl-tabs__tab(href='#terms') Terms of Use
+						a.mdl-tabs__tab(href='#privacy') Privacy
+						a.mdl-tabs__tab(href='#licenses') Licenses 
+			.mdl-cell.mdl-cell--9-col
+				.articles.mdl-shadow--2dp
+					#home.mdl-tabs__panel.is-active
+						.article-item.mdl-card
+							img( class="image image--article" src="https://source.unsplash.com/720x400/travel", alt="")
+							.mdl-card__title
+								h3.display-3 Home
+							.mdl-card__supporting-text
+								p Building creative solutions for accessibility & better human × tech interaction
+								h6.title 
+									|wearemakingthings
+								p We are passionate designers, coders and makers trying to make people's lives better.
+								p No matter who they are, what background they come from or which disability they have, everyone can have a decent life through technology.
+
+							.mdl-card__supporting-text
+								h6.title Work with us
+								p We are open for exciting projects you might outline for us. Keep in mind we are not focused on profitability or corporate projects. Get in touch with us to learn our process.
+								
+							.mdl-card__supporting-text
+								h6.title joinus
+								p We are always looking for new maker-minded team players, we value talent, not experience. Get in touch with us.
+
+
+					#legal.mdl-tabs__panel
+						.article-item.mdl-card
+							img( class="image image--article" src="https://source.unsplash.com/720x400/travel", alt="")
+							.mdl-card__title
+								h3.display-3 Legal info
+							.mdl-card__supporting-text
+								h6.title Legal Company Name
+								p Ticaret Ünvanı
+								p Dream Oriented is a registered entity/company in Republic of Turkey. There is few information we need to display here to make sure companies working with us access the right informations, tax id etc.
+								h6.title Tax id
+								p Vargi No
+								p 127683423i
+								h6.title centeral Registry
+								p Mersis no
+								p 124532648376869
+								h6.title trade Registry
+								p tescil tarihi
+								p 01.01.2022
+								h6.title Address
+								p Cairo, Egypt
+								p Please get in contact with us if you need any additional information. Legally, when we create a reciept or invoice for you or your company, we will email you a copy of it. You can also ask for archived reciepts or invoices we created for you.
+					#terms.mdl-tabs__panel
+						.article-item.mdl-card
+							img( class="image image--article" src="https://source.unsplash.com/720x400/travel", alt="")
+							.mdl-card__title
+								h3.display-3 Terms of Use
+							.mdl-card__supporting-text
+								p Any software or product created by Dream Oriented Limited has no warranty, unless otherwise is stated. We don't accept liability for legal, medical or technical issues that might occur in result of using our products, services and softwares.
+								p Accepting the terms to use our products and services means you have reviewed and accept our Privacy Policy. Please check /privacypolicy page for more information on how we treat your data and collect information.
+								p We will notify you using the best contact channel (via email and/or social media channels) we can for you to review and accept the changes to this terms.
+								p As a registered legal entity Dream Oriented Yazılım ve Bilişim Limited Şirketi, adheres with the Republic of Turkey internet data collection, distribution and publishing laws with the law id of 5651.
+								
+					#privacy.mdl-tabs__panel
+						.article-item.mdl-card
+							img( class="image image--article" src="https://source.unsplash.com/720x400/travel", alt="")
+							.mdl-card__title
+								h3.display-3 Privacy policy
+							.mdl-card__supporting-text
+								p This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+								h6.title What personal information do we collect from the people that visit our blog, website or app?
+								p When ordering or registering on our site, as appropriate, you may be asked to enter your name or other details to help you with your experience.
+								h6.title When do we collect information?
+								p We collect information from you when you register on our site or enter information on our site.
+								h6.title How do we use your information?
+								p We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:
+								p To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested.
+								p To improve our website in order to better serve you.
+								h6.title How do we protect your information?
+								p Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.
+								p We use regular Malware Scanning.
+								p Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.
+								p We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information.
+								p All transactions are processed through a gateway provider and are not stored or processed on our servers.
+								h6.title Do we use 'cookies'?
+								p We do not use cookies for tracking purposes
+								p You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser's Help Menu to learn the correct way to modify your cookies.
+								p If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.that make your site experience more efficient and may not function properly.
+								h6.title Third-party disclosure
+								p We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it's release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property or safety.
+								p However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+								h6.title Third-party links
+								p Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
+								h6.title According to CalOPPA, we agree to the following:
+								p Users can visit our site anonymously.
+								p Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website.
+								p Our Privacy Policy link includes the word 'Privacy' and can easily be found on the page specified above.
+								h6.title How does our site handle Do Not Track signals?
+								p We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.
+								h6.title Does our site allow third-party behavioral tracking?
+								p It's also important to note that we allow third-party behavioral tracking
+								h6.title COPPA (Children Online Privacy Protection Act)
+								p When it comes to the collection of personal information from children under the age of 13 years old, the Children's Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States' consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online.
+								p We market to, but do not collect information from children under 13.
+								p We don't let third-parties, including ad networks or plug-ins collect PII from children under 13.
+								p Additionally we don't monetize our products that target children under 13 with ads, in the cases we do or will; a human personnel of ours will check the displayed advertises for suitability for kids.
+								h6.title In order to remove your child's information please contact the following personnel via our contact page.
+								h6.title We adhere to the following COPPA tenants:
+								p Parents can review, delete, manage or refuse with whom their child's information is shared through contacting us directly. or contacting us directly.
+								p For apps and websites we sustain made especially for kids, parents will be prompted with a conversation where they can explicitly allow or deny the collection of usability data from kids under 13.
+								p As a registered legal entity Dream Oriented Yazılım ve Bilişim Limited Şirketi, adheres with the Republic of Turkey internet data collection, distribution and publishing laws with thelaw id of 5651.
+					
+					#licenses.mdl-tabs__panel
+						.article-item.mdl-card
+							img( class="image image--article" src="https://source.unsplash.com/720x400/travel", alt="")
+							.mdl-card__title
+								h3.display-3 Licenses
+							.mdl-card__supporting-text
+								p A list of used software's Open Source licenses and used open licensed artwork attributions.
+								p As a registered legal entity Dream Oriented Yazılım ve Bilişim Limited Şirketi, adheres with the Republic of Turkey internet data collection, distribution and publishing laws with the law id of 5651.
+
+			
+
+				

@@ -1,0 +1,79 @@
+.plans-container {
+  .mdl-card__title {
+    color: #fff;
+    height: 150px;
+    background: url('@/images/dog.png') bottom right 15% no-repeat #46B6AC;
+  }
+
+  .plans-container__plan {
+    position: relative;
+    margin: 5px;
+
+
+    input {
+      display: none;
+
+      &:checked+label {
+        border: 1px solid #9f9fef;
+
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99%;
+      height: 97%;
+      border-radius: 10px;
+
+    }
+  }
+
+  .plans-container__submit {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.mdl-radio__outer-circle {
+  top: 30px;
+}
+
+.mdl-radio__inner-circle {
+  top: 34px;
+}
+
+.mdl-radio {
+  min-width: 286px;
+}
+
+.mdl-list__item {
+  border-radius: 10px;
+}
+
+// plan cards
+
+
+#allPlanCards {
+  // width: max-content;
+
+  .pack-card--sm {
+    width: 30%;
+    border-radius: 10px;
+
+    .pack-card__title {
+      // font-weight: 600;
+      color: #fff;
+      filter: none;
+    }
+
+    .pack-card__title--sm {
+      color: #fff;
+
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 300;
+    }
+  }
+}

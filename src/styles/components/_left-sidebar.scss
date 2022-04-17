@@ -1,0 +1,142 @@
+.mdl-layout__drawer {
+  // min-height: 750px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #edeeef;
+  @media (max-width: 1024px) {
+    z-index: 6;
+  }
+  img {
+    width: 50%;
+  }
+
+  .kalami-logo {
+    width: 70%;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  margin: 10px 0;
+
+  .user__image {
+    width: 20%;
+    border-radius: 50%;
+
+  }
+
+  .user__data {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+    .user__data__name {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .user__data__packs {
+      font-size: 12px;
+    }
+  }
+
+}
+
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  & > div{
+    display: flex;
+  }
+
+  .sidebar-footer__download {
+    padding: 4px;
+    width: 50%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .sidebar-footer__links{
+    padding: 0 18px;
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+    a{
+      margin: 0 4px;
+      text-decoration: none;
+      color: #2c2cbb;
+    }
+  }
+}
+
+.copy-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+  margin-top: -10px;
+
+  a {
+    text-decoration: none;
+    color: #706f6f;
+    margin-bottom: 7px;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.mdl-navigation__link .material-icons {
+  margin-right: 15px;
+}
+
+.mdl-list__item {
+  justify-content: center;
+  cursor: pointer;
+
+  a{
+    color: #757575;
+
+  }
+}
+
+.demo-list-icon {
+  width: 240px;
+}
+
+.fritill {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -14px;
+  p {
+    margin: 0;
+    font-size: 12px;
+    flex: 3;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .fritill-logo {
+    // display: flex;
+    justify-content: center;
+    flex: 1;
+
+    .fritill-logo-image {
+      width: 43%;
+      // flex: 1;
+    }
+  }
+}

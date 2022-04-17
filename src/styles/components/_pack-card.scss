@@ -1,0 +1,82 @@
+.pack-card {
+  border-radius: 18px;
+  background-color: currentColor;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 11px 0;
+  position: relative;
+  transition: transform .7s;
+  text-decoration: none;
+  // color: #fff;
+  &:before {
+    content: '';
+    display: block;
+    pointer-events: none;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    color: inherit;
+    background-color: currentColor;
+    transition: opacity .2s cubic-bezier(.4, 0, .6, 1);
+    // z-index: 0;
+  }
+
+  &:hover,
+  &:active {
+    &:before {
+      opacity: 0.24;
+    }
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  .pack-card__image {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 8px;
+    z-index: 2;
+  }
+
+  .pack-card__title {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    filter: invert(60%);
+  }
+}
+
+#allCards {
+  background-color: #fff;
+}
+
+.packs-slider{
+  width: 100%;
+  margin-bottom: 20px;
+  .pack-card{
+    transform: scale(.9);
+    .pack-card__title{
+      filter: invert(0);
+      color: #fff;
+    }
+  }
+  .slick-arrow{
+    &::before{
+      color: #4051B5;
+    }
+    &.slick-next{
+      right: -16px;
+    }
+    &.slick-prev{
+      left: -16px;
+    }
+  }
+}

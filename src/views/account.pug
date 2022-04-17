@@ -1,0 +1,49 @@
+extends layouts/app
+
+block page-title
+  | User Profile
+
+
+block content
+  .mdl-grid
+    .mdl-cell--8-col
+      .mdl-card.mdl-shadow--2dp.mdl-card--unset-width
+        .mdl-card__supporting-text
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.mdl-textfield--full-width
+              input#email.mdl-textfield__input
+              label.mdl-textfield__label(for='email') Email
+
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.mdl-textfield--full-width
+              input#username.mdl-textfield__input
+              label.mdl-textfield__label(for='username') Username
+
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.mdl-textfield--full-width
+            input#password.mdl-textfield__input
+            label.mdl-textfield__label(for='password') Password
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.mdl-textfield--full-width
+            input#confirm-password.mdl-textfield__input
+            label.mdl-textfield__label(for='confirm-password') Confirm Password
+          p Languages
+          ul.mdl-list
+            li.mdl-list__item
+              span.mdl-list__item-primary-content
+                | Arabic
+              span.mdl-list__item-secondary-action
+                label.demo-list-radio.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='list-option-1')
+                  input#list-option-1.mdl-radio__button(type='radio' name='options' value='1' checked='')
+            li.mdl-list__item
+              span.mdl-list__item-primary-content
+                | English
+              span.mdl-list__item-secondary-action
+                label.demo-list-radio.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='list-option-2')
+                  input#list-option-2.mdl-radio__button(type='radio' name='options' value='2' checked='')
+            li.mdl-list__item
+              span.mdl-list__item-primary-content
+                | French
+              span.mdl-list__item-secondary-action
+                label.demo-list-radio.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='list-option-3')
+                  input#list-option-3.mdl-radio__button(type='radio' name='options' value='3' checked='')
+
+            button.mdl-button.mdl-button--raised.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-color-text--white
+                | Submit
+

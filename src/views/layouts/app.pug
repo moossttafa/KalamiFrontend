@@ -1,0 +1,16 @@
+extends main
+
+block layout
+  .mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
+    include ../partials/header
+      block page-title
+
+    #sub-header
+    include ../partials/left-sidebar
+
+    main.mdl-layout__content
+      .page-content
+        block content
+
+    include ../partials/right-sidebar
+    #overlay.mdl-layout__obfuscator

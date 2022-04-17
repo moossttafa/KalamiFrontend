@@ -1,0 +1,28 @@
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: .3s ease all;
+  &.image--article{
+    height: 300px;
+  }
+}
+
+.page-cover{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .4);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

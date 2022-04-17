@@ -1,0 +1,147 @@
+extends layouts/guest
+
+block page-title
+	| Home
+
+block content
+	
+	//- #trigger
+	section#section-wipes.demo
+		
+		#pinContainer
+			section.panel.blue
+				div.mobile
+					img(id="screen1" src="https://via.placeholder.com/150", alt="")
+					img(id="screen2" src="https://via.placeholder.com/160", alt="")
+					img(id="screen3" src="https://via.placeholder.com/170", alt="")
+				//- p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum id, at ipsum, molestias dicta repellendus eligendi molestiae harum distinctio beatae cupiditate ipsam tempore quas vel veniam. Perspiciatis tempore amet possimus.
+			section.panel.turqoise
+				h1.displa-4.scrollable-title Kalamy
+				p.scrollable-description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime molestiae odit vero?
+				a(href='#' class="mdl-list__item sidebar-footer__download")
+					img(src='~images/google-play.png' alt='apple store')
+
+				a(href='#' class="mdl-list__item sidebar-footer__download")
+					img(src='~images/apple-store.png' alt='apple store')
+			section.panel.purple
+				h1.displa-4.scrollable-title Kalamy
+				p.scrollable-description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae obcaecati fuga hic velit reprehenderit, veniam cum 
+				
+			section.panel.green
+				h1.displa-4.scrollable-title Kalamy
+				p.scrollable-description Lorem ipsum dolor sit amet, consectetur
+
+	//- section.hero
+	//- 	#mobile 
+	//- 	#first 
+	//- 	#second
+	//- 	#third
+	section.plans 
+			//- .mdl-grid
+				//- .mdl-cell.mdl-cell--12-col
+			h3.display-3 Plans
+			//- .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				a(href="#" class="plan-card")
+					span.material-icons.plan-card__icon send
+					h4.display-4 Basic
+					h4.display-4 100 EGP
+					h5.display-5 Monthly 
+					.mdl-card__supporting-text
+						| 3 Days Free
+					
+			//- .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				a(href="#" class="plan-card")
+					span.material-icons.plan-card__icon flight
+					h4.display-4 Pro
+					h4.display-4 500 EGP
+					h5.display-5 Six Months 
+					.mdl-card__supporting-text
+						| 3 Days Free
+						
+			//- .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				a(href="#" class="plan-card plan-card--lg")
+					span.material-icons.plan-card__icon recommend
+					h4.display-4 Enterprise
+					h4.display-4 1000 EGP
+					h5.display-5 Yearly 
+					.mdl-card__supporting-text
+						| 3 Days Free
+
+			//- .mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				a(href="#" class="plan-card")
+					span.material-icons.plan-card__icon rocket_launch
+					h4.display-4 Enterprise
+					h4.display-4 2500 EGP
+					h5.display-5 Lifetime 
+					.mdl-card__supporting-text
+						| 3 Days Free
+
+			.slider
+				div
+					a(href="#" class="plan-card")
+						span.material-icons.plan-card__icon send
+						h4.display-4 Basic
+						h4.display-4 100 EGP
+						h5.display-5 Monthly 
+						.mdl-card__supporting-text
+							| 3 Days Free
+				div
+					a(href="#" class="plan-card plan-card--lg")
+						span.material-icons.plan-card__icon recommend
+						h4.display-4 Enterprise
+						h4.display-4 1000 EGP
+						h5.display-5 Yearly 
+						.mdl-card__supporting-text
+							| 3 Days Free
+				div
+					a(href="#" class="plan-card")
+						span.material-icons.plan-card__icon flight
+						h4.display-4 Pro
+						h4.display-4 500 EGP
+						h5.display-5 Six Months 
+						.mdl-card__supporting-text
+							| 3 Days Free
+				div
+					a(href="#" class="plan-card")
+						span.material-icons.plan-card__icon rocket_launch
+						h4.display-4 Enterprise
+						h4.display-4 2500 EGP
+						h5.display-5 Lifetime 
+						.mdl-card__supporting-text
+							| 3 Days Free
+			
+	
+
+	section.features 
+		.mdl-grid
+			.mdl-cell.mdl-cell--12-col
+				h3.display-3 Features
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--12-col-phone
+				include ./components/feature-card.pug
+			
+
+	
+	script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js')
+	script(src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js") 
+	
+
+
+	//- script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js')
+	//- script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js')
+	//- script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js')
+	//- script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js')
+	//- script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js')
+	//- script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js") 
+	

@@ -1,0 +1,35 @@
+.banner{
+  background-color: #fff;
+  padding: 24px 8px 8px 16px;
+  position: fixed;
+  margin-left: 240px;
+  width: calc(100% - 264px);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.24);
+  top: 56px;
+  left: 0;
+  height: 100px;
+  display: flex;
+  z-index: 2;
+  & + div{
+    margin-top: 140px;
+  }
+  .panner__content{
+    
+    p {
+      @media (max-width: 768px) {
+        height: 48px;
+        overflow: hidden;
+      }
+      // margin-bottom: 0;
+    }
+  }
+  .panner__actions{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    width: fit-content;
+  }
+}

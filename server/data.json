@@ -1,0 +1,22 @@
+{
+  "card":[
+    {
+      "id": 1,
+      "title": "I",
+      "image": "./assets/images/girl.png",
+      "audio": "./assets/audio/i.wav"
+    },
+    {
+      "id": 2,
+      "title": "Want",
+      "image": "./assets/images/girl.png",
+      "audio": "./assets/audio/want.wav"
+    },
+    {
+      "id": 3,
+      "title": "icecream",
+      "image": "./assets/images/girl.png",
+      "audio": "./assets/audio/icecream.wav"
+    }
+  ]
+}
